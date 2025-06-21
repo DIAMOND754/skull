@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Change to the script directory
+cd /home/diamond/Desktop/Github/skull/ || { echo "Directory not found"; exit 1; }
+
+# Generate a random number between 1 and 3
+rand_num=$(( (RANDOM % 3) + 1 ))
+
+# Run the Python script with the random number
+python3 gifReader.py "$rand_num"
+
